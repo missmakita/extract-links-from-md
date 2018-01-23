@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	  <link href="node_modules/materialize-css/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<title>Extractor de Links Markdown</title>
+</head>
+<body>
+
+	<div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Extractor de Links Markdown</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los links encontrados. </h5>
+      </div>
+      <div class="row center">
+      	<div class="input-field col s12">
+          <textarea id="txtInput" class="materialize-textarea"></textarea>
+          <label for="textarea1">Texto Markdown</label>
+        </div>
+        <a  id="eLinks" class="btn-large waves-effect waves-light orange">Extrae tus links</a>
+      </div>
+      <div class="row center">
+
+      	<pre id="result"></pre>
+      </div>
+  
+
+    </div>
+</body>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+
+	<script src="markdown-link-extractor.js"></script>
+</html>
