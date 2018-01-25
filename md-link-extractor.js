@@ -1,6 +1,6 @@
 // Objeto Link:
 class Link {
-  constructor(text,href) {
+  constructor(text, href) {
     this.text = text;
     this.href = href;
   }
@@ -32,10 +32,10 @@ let result = [];
   let matches = markdown.match(re);
 
   for (i = 0; i < matches.length; i++) {
-  let one = new Link(matches[i],matches[i+1])
-  i++
+  let one = new Link(matches[i].toString(),matches[i + 1]);
+  i++;
   result.push(one);
-  }
+  };
 
   // Retornar un array de objetos:
   let links = JSON.stringify(result);
