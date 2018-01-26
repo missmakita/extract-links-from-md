@@ -1,4 +1,4 @@
-/// Objeto Link:
+// Objeto Link:
 class Link {
   constructor(text, href) {
     this.text = text;
@@ -6,41 +6,20 @@ class Link {
   }
 }
 
-// String en formato Markdown:
-let markdown = `# Lorem ipsum
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
-[dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-
-[foo](http://foo.com)
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.`;
-
 // Función que extrae links desde el string en formato Markdown:
-let result = [];
-//module.exports = function markdownLinkExtractor(markdown) {
 
-  // Expresión regular que identifica la URL y el Texto Visible de un link:
-  const re = /(\[(.*?)\])|(https?|ftp):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?/gi;
+markdownLinkExtractor = (markdown) => { 
+  'use strict';
+  // Expresion regular que comprueba el formato markDown de los links
+  const re = /\[(.*?)\]\((.*?|(https?|ftp):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\)/ig; //i = ignora mayusculas y minusculas  g = ejecuta una busqueda global , sucesibament
 
-  // Extraer links:
-  let matches = markdown.match(re);
+  let matches = re.exec(markdown); // Cambio Método .match a método .exec() para poder sacar los corchetes
+  let result = [];
 
-  for (i = 0; i < matches.length; i++) {
-  let one = new Link(matches[i].toString(),matches[i + 1]);
-  i++;
-  result.push(one);
-  };
-
-  // Retornar un array de objetos:
-  let links = JSON.stringify(result);
-  console.log(links);
-//};
-
-
-
+  do {
+    const one = new Link(matches[1], matches[2]); 
+    result.push(one);
+  } while ((matches = re.exec(markdown)) !== null);
+  return JSON.stringify(result);
+};
+module.exports.markdownLinkExtractor = markdownLinkExtractor;
