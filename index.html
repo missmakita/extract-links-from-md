@@ -9,13 +9,13 @@
   <h3>Ingresa un texto en formato markdown para analizar:</h3>
   <textarea id="markdown" cols="100" rows="10"></textarea>
   <br>
-  <button onclick="myLinks()" id="extract">Extraer Links!</button>
+  <button onclick="myLinks()">Extraer Links!</button>
   <h3>Resultado:</h3>
   <pre>
     <code id="result"></code>
   </pre>
 </body>
-  <script src="md-link-extractor.js"></script>
+  <script src="./lib/md-link-extractor.js"></script>
   <script>
     function myLinks() {
       let markdown = document.getElementById('markdown').value;
