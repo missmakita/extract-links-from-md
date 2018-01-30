@@ -14,8 +14,84 @@
   <pre>
     <code id="result"></code>
   </pre>
+
+<article class="markdown-body entry-content" itemprop="text"><p align="center">
+  <a href="/missmakita/md-links-extractor/blob/dev/img/logo.gif" target="_blank"><img src="/missmakita/md-links-extractor/raw/dev/img/logo.gif" style="max-width:100%;"></a>
+  
+</p>
+<p align="center">
+  a markdown link extractor
+</p>
+<p align="center">
+  <a href="https://badge.fury.io/js/sweetalert" rel="nofollow"><img src="https://camo.githubusercontent.com/ae562926a34abf41061aacab173cbfe0a583f611/68747470733a2f2f62616467652e667572792e696f2f6a732f7377656574616c6572742e737667" alt="npm v5.0.0" height="18" data-canonical-src="https://badge.fury.io/js/sweetalert.svg" style="max-width:100%;"></a>
+</p>
+<h2><a href="#descripción" aria-hidden="true" class="anchor" id="user-content-descripción"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Descripción</h2>
+<p><strong>Linkin' Mark</strong> es un extractor de links desde formato Markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.</p>
+<h2><a href="#instalación" aria-hidden="true" class="anchor" id="user-content-instalación"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instalación</h2>
+<pre><code>$ npm install --save linkinmark
+</code></pre>
+<h2><a href="#uso" aria-hidden="true" class="anchor" id="user-content-uso"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Uso</h2>
+<h3><a href="#nodejs" aria-hidden="true" class="anchor" id="user-content-nodejs"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Node.js</h3>
+<ol>
+<li>
+<p>Instala <strong>Linkin' Mark</strong> en la carpeta raíz de tu proyecto.</p>
+</li>
+<li>
+<p>Modifica la siguiente línea del código base en <code>index.js</code>, incorporando la ruta del archivo markdown a procesar:</p>
+<pre><code>const md = fs.readFileSync('&lt;mi-archivo.md&gt;').toString();
+</code></pre>
+</li>
+<li>
+<p>En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta <code>index.js</code> :</p>
+<pre><code>node index.js
+</code></pre>
+</li>
+<li>
+<p>El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
+<pre><code>[{"text":"labore","href":"https://en.wiktionary.org/wiki/labore"},{"text":"dolore","href":"https://en.wiktionary.org/wiki/dolore"},{"text":"foo","href":"http://foo.com"}
+</code></pre>
+</li>
+</ol>
+<h3><a href="#browser" aria-hidden="true" class="anchor" id="user-content-browser"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browser</h3>
+<p>La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, <strong>Linkin' Mark</strong> devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:</p>
+<ol>
+<li>
+<p>Descarga <strong>Linkin' Mark</strong>.</p>
+</li>
+<li>
+<p>Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto:</p>
+</li>
+<li>
+<p>Crea un elemento <code>&lt;input&gt;</code> o <code>&lt;textarea&gt;</code> con <code>id="markdown"</code> en tu html. Agrega un botón con el atributo <code>onclick="myLinks()"</code>.
+Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <code>&lt;pre&gt;&lt;/pre&gt;</code> y un elemento <code>&lt;code&gt;&lt;/code&gt;</code> con <code>id="result"</code> anidado en su interior. Puedes seguir este ejemplo:</p>
+
+</li>
+<li>
+<p>Agrega el script al final del <code>body</code> de tu archivo <code>html</code>:</p>
+<pre><code>&lt;script src=".lib/md-link-extractor.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function myLinks() {
+  let markdown = document.getElementById('markdown').value;
+  document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
+};
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>Si decides modificar los nombres de id sugeridas, recuerda verificar que coincidan con el script.</p>
+</li>
+</ol>
+<p>El resultado se verá así:
+<a href="/missmakita/md-links-extractor/blob/dev/img/ejemplohtml.png" target="_blank"><img src="/missmakita/md-links-extractor/raw/dev/img/ejemplohtml.png" alt="Ejemplo HTML" style="max-width:100%;"></a></p>
+<h2><a href="#autoras" aria-hidden="true" class="anchor" id="user-content-autoras"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Autoras</h2>
+<p><a href="https://github.com/missmakita">Makarena Fernández</a>, <a href="https://github.com/visidevi">Visaka Devi</a> y <a href="https://github.com/skyblue16">Viviana Marcelo</a>.
+Estudiantes de <a href="https://laboratoria.la" rel="nofollow">Laboratoria</a>.</p>
+<h2><a href="#licencia" aria-hidden="true" class="anchor" id="user-content-licencia"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Licencia</h2>
+<p><a href="/missmakita/md-links-extractor/blob/dev/LICENSE.txt">MIT</a></p>
+</article>
   <script src="./lib/md-link-extractor.js"></script>
   <script>
+    
     const extract = document.getElementById('extract');
     extract.onclick = function myLinks() {
       let markdown = document.getElementById('markdown').value;
