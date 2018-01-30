@@ -11,31 +11,13 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
-  <h1>Extractor de Links Markdown</h1>
-  <h3>Ingresa un texto en formato markdown para analizar:</h3>
-  <textarea id="markdown" cols="100" rows="10"></textarea>
-  <br>
-  <button id="extract">Extraer Links!</button>
-  <h3>Resultado:</h3>
-  <pre>
-    <code id="result"></code>
-  </pre>
-  <script src="./lib/md-link-extractor.js"></script>
-  <script>
-    const extract = document.getElementById('extract');
-    extract.onclick = function myLinks() {
-    let markdown = document.getElementById('markdown').value;
-    document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
-    };
-  </script>
 </body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><strong>Linkin' Mark</strong></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Descargar </a></li>
-        <li><a href="#demo" class="showDemo">Demo</a></li>
+        <li><a href="#demo" id="showDemo">Demo</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Link Mark</a></li>
