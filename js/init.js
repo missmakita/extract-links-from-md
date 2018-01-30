@@ -1,12 +1,10 @@
-(function($) {
-  $(function() {
-
-    $('.button-collapse').sideNav();
+$(document).ready(function() {
+   $('#demo').hide();
+   $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $('#demo').on('click', function() {
-    	$();
+    $('#showDemo').on('click', function() {
+    $('#demo').show();
+    aler('j')
     });
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
 
-  
+});
