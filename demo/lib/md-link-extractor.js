@@ -1,11 +1,13 @@
+// Objeto Link:
 class Link {
   constructor(text, href) {
     this.text = text;
     this.href = href;
   }
-};
+}
+
 // Función que extrae links desde el string en formato Markdown:
-markdownLinkExtractor = (markdown) => {
+markdownLinkExtractor = function(markdown) {
   'use strict';
   const re = /!?\[(.*)\]\((.*?)\)/gi;  
 
@@ -32,3 +34,4 @@ markdownLinkExtractor = (markdown) => {
   };
 };
 
+module.exports.markdownLinkExtractor = markdownLinkExtractor;
