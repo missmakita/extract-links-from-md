@@ -2,7 +2,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 <<<<<<< HEAD
 incididunt ut ![labore](http://materializecss.com/getting-started.html) et
  [dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim 
-=======
 incididunt ut [labore](https://en.wiktionary.org/wiki/dolore) et
 [dolore](http://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
 >>>>>>> upstream/dev
