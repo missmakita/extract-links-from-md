@@ -12,13 +12,13 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><strong>Linkin' Mark</strong></a>
+      <a id="logo-container" href="#" class="brand-logo"><img id="logo" src="img/logo-estatico.jpg" alt="Logo Linkin' Mark"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Descargar </a></li>
         <li><a href="#demo">Demo</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Link Mark</a></li>
+        <li><a href="#">Linkin' Mark</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="row center">
           <div class="input-field col s12">
-            <textarea id="txtInput" class="materialize-textarea"></textarea>
+            <textarea id="markdown" class="materialize-textarea"></textarea>
             <label for="textarea1">Texto Markdown</label>
           </div>
           <a  id="extract" class="btn-large waves-effect waves-light blue">Extrae tus links</a>
@@ -57,7 +57,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="thumb.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="img/thumb.jpg" alt="Unsplashed background img 1"></div>
   </div>
   <div class="container"> 
     <div class="section">
@@ -83,19 +83,19 @@
           </p>
           <h2 class="center blue-text"><i class="material-icons ">code</i></h2>
           <h5 class="center">Uso</h5>
-          <h5 class="">Node.js</h5>
+          <h5>Node.js</h5>
           <p class="light">
             1. Instala Linkin' Mark en la carpeta raíz de tu proyecto.
           </p>
           <p class="light">
-            2. Modifica la siguiente línea del código base en `index.js`, incorporando la ruta del archivo markdown a procesar:</p>
+            2. Modifica la siguiente línea del código base en <code>index.js</code>, incorporando la ruta del archivo markdown a procesar:</p>
           <p>
             <code>
-              const md = fs.readFileSync('<mi-archivo.md>').toString();
+              const md = fs.readFileSync('mi-archivo.md').toString();
             </code>
           </p>
           <p class="light">
-            3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js :</p>
+            3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta <code>index.js</code>:</p>
           <p>
             <code>
               node index.js
@@ -105,7 +105,20 @@
             4. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
           <p>
             <pre>
-              [{"text":"labore","href":"https://en.wiktionary.org/wiki/labore"},{"text":"dolore","href":"https://en.wiktionary.org/wiki/dolore"},{"text":"foo","href":"http://foo.com"}]
+              [
+                {
+                  "text":"labore",
+                  "href":"https://en.wiktionary.org/wiki/labore"
+                },
+                {
+                  "text":"dolore",
+                  "href":"https://en.wiktionary.org/wiki/dolore"
+                },
+                {
+                  "text":"foo",
+                  "href":"http://foo.com"
+                }
+              ]
             </pre>
           </p>
         </div>
@@ -116,7 +129,7 @@
     <div class="section">
       <div class="row">
         <div class="col s12 ">
-          <div class="icon-block">
+          <div class="icon-block center">
             <h2 class="center  blue-text"><i class="material-icons">settings</i></h2>
             <h4 class="center">Browser</h4>
             <div class="col s12 m12 l12">
@@ -133,12 +146,12 @@
               <p>
                 Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento < pre > y un elemento < code > con "id="result" anidado en su interior. Puedes seguir este ejemplo:
               </p>
-              <img class="bwr responsive-img" src="html-browser.png">
+              <img class="bwr responsive-img" src="img/html-browser.png">
             </div>
             <p>4. Agrega el script al final del body de tu archivo html:</p>
-            <img class="responsive-img" src="html-script.png">
+            <img class="responsive-img" src="img/html-script.png">
             <p>5. Si decides modificar los nombres de id sugeridas, recuerda verificar que coincidan con el script.</p>
-            <img class="responsive-img" src="ejemplohtml.png">
+            <img class="responsive-img" src="img/ejemplohtml.png">
           </div>
         </div> 
       </div>
@@ -153,7 +166,7 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="thumb.jpg" alt="Unsplashed background img 2">
+      <img src="img/thumb.jpg" alt="Unsplashed background img 2">
     </div>
   </div>
   <div class="container">
@@ -180,30 +193,31 @@
           <p></p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Autoras</h5>
+          <h5 class="white-text">Contacto</h5>
           <ul>
-            <li><a class="white-text light"  href=""></a>Makarena Fernández</li>
-            <li><a class="white-text light"  href=""></a>Visaka Devi</li>
-            <li><a class="white-text light"  href=""></a>Viviana Marcelo</li>
+            <li><a class="white-text light"  href=""></a>GitHub</li>
+            <li><a class="white-text light"  href=""></a></li>
+            <li><a class="white-text light"  href=""></a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Licencia</h5>
           <ul>
-            <li><a class="white-text light" href="#!">MIT</a></li>
+            <li><a class="white-text light" href="https://github.com/missmakita/md-links-extractor/blob/dev/LICENSE.txt">MIT</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Hecho por: <a class="brown-text text-lighten-3" href="http://materializecss.com">Laboratoria - CL</a>
+        Copyright (c) 2018 Makarena Fernández Lavín, Visaka Chávez y Viviana Marcelo
       </div>
     </div>
   </footer>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
+  <script src="./lib/md-link-extractor.js"></script>
+  <script src="src/init.js"></script>
   </body>
 </html>
