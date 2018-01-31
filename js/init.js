@@ -10,6 +10,6 @@ $('#showDemo').click(function() {
 
 const extract = document.getElementById('extract');
 extract.onclick = function myLinks() {
-  let markdown = document.getElementById('txtInput').value;
+  let markdown = document.getElementById('markdown').value;
   document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
 };
