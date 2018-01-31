@@ -5,8 +5,7 @@ $(document).ready(function() {
 });
 
 $('#showDemo').click(function() {
-  $('#demo').show();
-  alert('j');
+  $('#demo').toggle();
 });
 
 const extract = document.getElementById('extract');
