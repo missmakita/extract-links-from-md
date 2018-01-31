@@ -55,3 +55,10 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#logo {
+  margin-top: 5px;
+}
+.bwr, .imgScript, .imgHtml {
+  opacity: 0;
+} 

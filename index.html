@@ -3,33 +3,27 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title> LINK' MARK</title>
-
+  <title>LINKIN' MARK</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><strong>Linkin' Mark</strong></a>
+      <a id="logo-container" href="#" class="brand-logo"><img id="logo" src="img/linkinDemo.png" alt="Logo Linkin' Mark"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Descargar </a></li>
-        <li><a href="#demo">Demo</a></li>
+        <li><a href="#demo" id="showDemo">Demo</a></li>
       </ul>
-
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Link Mark</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
-
-
-  <div class="container hide" id="demo">
+  <div class="container" id="demo">
     <div class="row">
       <div class="col s12">
         <h5 class="header center blue-text">Extractor de Links Markdown</h5>
@@ -42,15 +36,12 @@
             <label for="textarea1">Texto Markdown</label>
           </div>
           <a  id="extract" class="btn-large waves-effect waves-light blue">Extrae tus links</a>
-        </div>
-        
-         <pre>
-            <code id="result"></code>
-          </pre>
+       </div>
+        <pre><code id="result"></code>
+        </pre>
       </div>
     </div>
   </div>
-
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -63,75 +54,112 @@
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue">Descargar</a>
         </div>
         <br><br>
-
       </div>
     </div>
-    <div class="parallax"><img src="thumb.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="img/thumb.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
-
   <div class="container"> 
     <div class="section">
       <div class="row">
         <div class="col s12 ">
           <div class="icon-block">
-           
+
           </div>
         </div>
       </div>
+    </div>
   </div>
-</div>
-
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <div class="col s12">
-         <h2 class="center  blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Instalación</h5>
-            <p><code>$ npm install --save linkinmark</code></p>
-            <h2 class="center blue-text"><i class="material-icons ">code</i></h2>
-            <h5 class="center">Uso</h5>
-            <h5 class="">Node.js</h5>
-
-            <p class="light">1. Instala Linkin' Mark en la carpeta raíz de tu proyecto.</p>
-            <p class="light">2.  la siguiente línea del código base en index.js, incorporando la ruta del archivo markdown a procesar:</p>
-            <p><code> const md = fs.readFileSync('<mi-archivo.md>').toString();</code></p>
-            <p class="light">3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js :</p>
-            <p><code>node index.js</code></p>
-            <p class="light">4. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
-            <p><pre>[{"text":"labore","href":"https://en.wiktionary.org/wiki/labore"},{"text":"dolore","href":"https://en.wiktionary.org/wiki/dolore"},{"text":"foo","href":"http://foo.com"}]</pre></p>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <h2 class="center  blue-text"><i class=" large material-icons ">settings</i></h2>
+          <h5 class="center">Instalación</h5>
+          
+          <h6 class=""><strong>NPM</strong></h6>
+          <p>
+            <code>
+              $ npm install --save linkinmark
+            </code>
+          </p>
+          <h6 class=""><strong>Descarga directa</strong></h6>
+         
+          <p class="light">1. Descarga <a href="http:missmakita.github.io/md-links-extractor"><strong>Linkin' Mark</strong></a>.
+          </p>
+          <p class="light">2. Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto.</p>
+          <h2 class="center blue-text"><i class=" large material-icons ">code</i></h2>
+          <h5 class="center">Uso</h5>
+          <h5 class="">Node.js</h5>
+          <p class="light">
+            1. Instala Linkin' Mark en la carpeta raíz de tu proyecto.
+          </p>
+          <p class="light">
+            2. Modifica la siguiente línea del código base en `index.js`, incorporando la ruta del archivo markdown a procesar:</p>
+          <p>
+            <code>
+              const md = fs.readFileSync('<mi-archivo.md>').toString();
+            </code>
+          </p>
+          <p class="light">
+            3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js :</p>
+          <p>
+            <code>
+              node index.js
+            </code>
+          </p>
+          <p class="light">
+            4. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
+          <p>
+            <pre>
+            [
+                {
+                  "text":"labore",
+                  "href":"https://en.wiktionary.org/wiki/labore"
+                },
+                {
+                  "text":"dolore",
+                  "href":"https://en.wiktionary.org/wiki/dolore"
+                },
+                {
+                  "text":"foo",
+                  "href":"http://foo.com"
+                }
+              ]
+            </pre>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="section">
-    <dix class="row">
-          <div class="col s12 ">
-          <div class="icon-block">
-            <h2 class="center  blue-text"><i class="material-icons">settings</i></h2>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+      <div class="icons-block">
+        <div class="col s12 ">
+            <h2 class="center  blue-text"><i class=" large material-icons ">settings</i></h2>
             <h4 class="center">Browser</h4>
-            <div class="col s12 m12 l12">
-              <h5 class="">La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, <strong>Linkin' Mark</strong> devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:</h5>
-
-              <p>1. Descarga <strong>Linkin' Mark</strong>.</p>
-              <p>2. Incorpora la carpeta `lib` conteniendo el archivo `md-link-extractor.js` en  la carpeta raíz de tu proyecto:</p>
-              <p>3. Crea un elemento < input > o < textarea > con id="markdown" en tu html. Agrega un botón con el atributo `onclick="myLinks()"`.</p>
-              <p>Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento < pre > y un elemento < code > con "id="result" anidado en su interior. Puedes seguir este ejemplo:</p>
-              <img class="bwr responsive-img" src="html-browser.png">
+            <div class="col s12">
+              <p class="light">La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, <strong>Linkin' Mark</strong> devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:</p>
+              <p class="light">
+                1. Descarga <strong>Linkin' Mark</strong>.
+              </p>
+              <p class="light">
+                2. Incorpora la carpeta <code>`lib`</code> conteniendo el archivo <code>`md-link-extractor.js`</code> en  la carpeta raíz de tu proyecto:
+              </p>
+              <p class="light">
+                3. Crea un elemento <code>< input > </code>o <code>< textarea ></code> con <code>id="markdown"</code> en tu html. Agrega un botón con el<code> `id="extract"`.</code> Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <code>&lt;pre&gt;&lt;/pre&gt;</code> y un elemento<code>&lt;code&gt;&lt;/code&gt;</code> con <code>"id="result"</code> anidado en su interior. Puedes seguir este ejemplo:
+              </p>
+              <img class="bwr responsive-img" src="img/html-browser.png">
             </div>
-            <p>4. Agrega el script al final del body de tu archivo html:</p>
-            <img class="responsive-img" src="html-script.png">
-            <p>5. Si decides modificar los nombres de id sugeridas, recuerda verificar que coincidan con el script.</p>
-            <img class="responsive-img" src="ejemplohtml.png">
+            <p class="light">4. Agrega el script al final del <code>body</code> de tu archivo<code> html</code>:</p>
+            <img class="imgScript responsive-img" src="img/html-script.png">
+            <p class="light">5. Si decides modificar los nombres de <code>id</code> sugeridas, recuerda verificar que coincidan con el <code>script</code>.</p>
+            <img class="imgHtml responsive-img" src="img/ejemplohtml.png">
           </div>
         </div> 
-    </dix>
+      </div>
+    </div>
   </div>
-</div>
-
-    
-
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -140,63 +168,61 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="thumb.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax">
+      <img src="img/thumb.jpg" alt="Unsplashed background img 2">
+    </div>
   </div>
-
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Sobre Linkin' Mark</h4>
-          <p class="left-align light">La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, Linkin' Mark devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:</p>
-          <p></p>
+          <p class="left-align light">
+            La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, Linkin' Mark devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:
+          </p>
         </div>
       </div>
-
     </div>
   </div>
-
-
   <footer class="page-footer grey darken-4">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Linkin' Mark</h5>
-          <p class="grey-text text-lighten-4">Linkin' Mark es un extractor de links desde formato Markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.</p>
+          <p class="grey-text text-lighten-4">
+            Linkin' Mark es un extractor de links desde formato Markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
+          </p>
           <p></p>
-
-
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Autoras</h5>
+          <h5 class="white-text">Contacto</h5>
           <ul>
-            <li><a class="white-text light"  href=""></a>Makarena Fernández</li>
-            <li><a class="white-text light"  href=""></a>Visaka Devi</li>
-            <li><a class="white-text light"  href=""></a>Viviana Marcelo</li>
+            <li><a class="white-text light"  href=""></a>GitHub</li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Licencia</h5>
           <ul>
             <li><a class="white-text light" href="#!">MIT</a></li>
-            
+          </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-     Echo por: <a class="brown-text text-lighten-3" href="http://materializecss.com">Laboratoria - CL</a>
+       Copyright (c): <a class="brown-text text-lighten-3" href="http://materializecss.com"> 2018 Makarena Fernández Lavín, Visaka Devi y Viviana Marcelo</a>
       </div>
     </div>
   </footer>
-
-
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+    
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="lib/md-link-extractor.js"></script>
   <script src="js/init.js"></script>
-
   </body>
+
 </html>
+        
+
