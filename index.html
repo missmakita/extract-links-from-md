@@ -16,33 +16,34 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"><img id="logo" src="img/logo-estatico.jpg" alt="Logo Linkin' Mark"></a>
         <ul class="right hide-on-med-and-down">
-         <li><a href="#">Descargar </a></li>
-         <li><a href="#demo" id="showDemo">Demo</a></li>
+          <li><a href="#">Descargar </a></li>
+          <li><a href="#demo" id="showDemo">Demo</a></li>
         </ul>
-       <ul id="nav-mobile" class="side-nav">
-         <li><a href="#">Link Mark</a></li>
-       </ul>
-       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-     </div>
-   </nav>
- </div>
- <div class="container" id="demo">
-   <div class="row">
-     <div class="col s12">
-       <h5 class="header center blue-text">Extractor de Links Markdown</h5>
-       <div class="row center">
-         <p class="header col s12 light">Pruebalo!
-         ingresa tu texto Markdown
-         </p>
-       </div>
-       <div class="row center">
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Link Mark</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  <div class="container" id="demo">
+    <div class="row">
+      <div class="col s12">
+        <h5 class="header center blue-text">Extractor de Links Markdown</h5>
+        <div class="row center">
+          <p class="header col s12 light">Pruebalo!
+          ingresa tu texto Markdown
+          </p>
+        </div>
+        <div class="row center">
           <div class="input-field col s12">
             <textarea id="txtInput" class="materialize-textarea"></textarea>
             <label for="textarea1">Texto Markdown</label>
-        </div>
+          </div>
           <a  id="extract" class="btn-large waves-effect waves-light blue">Extrae tus links</a>
         </div>
-        <pre><code id="result"></code>
+        <pre>
+          <code id="result"></code>
         </pre>
       </div>
     </div>
@@ -71,74 +72,78 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="img/Screenshot from 2018-02-01 13-32-05.png" alt="Unsplashed background img 1"></div>
+    <div class="parallax">
+      <img src="img/Screenshot from 2018-02-01 13-32-05.png" alt="Unsplashed background img 1">
+    </div>
   </div>
-  
   <div class="section" id="settings">
     <div class="container" >
       <div class="row">
-       <div class="col s12" >
-        <h2 class="center "><i class="blue-text large material-icons" >settings</i></h2>
-        <h5 class="center">Instalación</h5>
-      </div>
+        <div class="col s12" >
+          <h2 class="center "><i class="blue-text large material-icons" >settings</i></h2>
+          <h5 class="center">Instalación</h5>
+        </div>
       </div>
     </div>
   </div> 
-
-    <div class="section white-text blue z-depth-4" >
-      <div class="container">
-        <div class="row">
-            <div class="col s6">
-              <h6 ><strong>DESCARGA DIRECTA</strong></h6>
-              <p class="light">1. Descarga <a href="http:missmakita.github.io/md-links-extractor"><strong class="white-text">Linkin' Mark</strong></a>.</p>
-             <p class="light">2. Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto.</p>
-          </div>
-          <div class="col s5 offset-s1">
-             <h6 class=""><strong>NPM</strong></h6>
-              <p>
-                <code>
-                  $ npm install --save linkinmark 
-                </code>
-              </p>
-            </div>
+  <div class="section white-text blue z-depth-4" >
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <h6 ><strong>DESCARGA DIRECTA</strong></h6>
+          <p class="light">1. Descarga <a href="http:missmakita.github.io/md-links-extractor"><strong class="white-text">Linkin' Mark</strong></a>.
+          </p>
+          <p class="light">2. Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto.
+          </p>
         </div>
-      </div>
-    </div> 
-    <div class="section" id="code">
-      <div class="container" >
-        <div class="row">
-         <div class="col s12" >
-          <h2 class="center "><i class=" blue-text large material-icons " >code</i></h2>
-          <h5 class="center">Uso</h5>
-        </div>
+        <div class="col s5 offset-s1">
+          <h6 class=""><strong>NPM</strong></h6>
+          <p>
+            <code>
+              $ npm install --save linkinmark 
+            </code>
+          </p>
         </div>
       </div>
     </div>
-    <div class="section" >
-      <div class="container">
-        <div class="row">
-          <h6 class=""><strong>Node.js</strong></h6>
-          <p class="light">
-            1. Instala Linkin' Mark en la carpeta raíz de tu proyecto.
-          </p>
-          <p class="light">
-            2. Modifica la siguiente línea del código base en `index.js`, incorporando la ruta del archivo markdown a procesar:</p>
-          <p>
-            <code>
-              const md = fs.readFileSync('<mi-archivo.md>').toString();
-            </code>
-          </p>
-          <p class="light">
-            3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js :</p>
-          <p>
-            <code>
-              node index.js
-            </code>
-          </p>
-          <p class="light">
+  </div> 
+  <div class="section" id="code">
+    <div class="container" >
+      <div class="row">
+        <div class="col s12" >
+          <h2 class="center "><i class=" blue-text large material-icons " >code</i></h2>
+          <h5 class="center">Uso</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" >
+    <div class="container">
+      <div class="row">
+        <h6 class=""><strong>Node.js</strong></h6>
+        <p class="light">
+          1. Instala Linkin' Mark en la carpeta raíz de tu proyecto.
+        </p>
+        <p class="light">
+        2. Modifica la siguiente línea del código base en `index.js`, incorporando la ruta del archivo markdown a procesar:
+        </p>
+        <p>
+          <code>
+            const md = fs.readFileSync('<mi-archivo.md>').toString();
+          </code>
+        </p>
+        <p class="light">
+          3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js:
+        </p>
+        <p>
+          <code>
+            node index.js
+          </code>
+        </p>
+        <p class="light">
             4. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
-          <p >
-            <pre class="white-text blue">
+        <p >
+          <pre class="white-text blue">
             [
                 {
                   "text":"labore",
@@ -153,11 +158,11 @@
                   "href":"http://foo.com"
                 }
               ]
-            </pre>
-          </p>
-        </div>
+          </pre>
+        </p>
       </div>
     </div>
+  </div>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
