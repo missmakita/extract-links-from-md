@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('#demo').hide();
+  $('#result').hide();
   $('.button-collapse').sideNav();
   $('.parallax').parallax();
 });
