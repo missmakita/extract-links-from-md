@@ -51,14 +51,20 @@ footer.page-footer {
 }
 
 #logo {
-  height: 55px;
+  margin-top: 5px;
+  width: 60px;
+}
+#logoE {
+  margin-top: 6%;
+  width: 40%;
+  margin-bottom: 2%;
 }
 .logoGit{
   color: white;
   width: 50px;
 }
 .veve{
-  text-shadow: 0.1em 0.1em 0.05em #000;
+  text-shadow: 0.05em 0.05em 0.05em #000;
 }
 #veveGray{
   text-shadow: 0.05em 0.05em 0.01em #000;
@@ -72,3 +78,6 @@ footer.page-footer {
 .love{
   margin-top: 100px;
 }
+.bwr, .imgScript, .imgHtml {
+  opacity: 0;
+} 
