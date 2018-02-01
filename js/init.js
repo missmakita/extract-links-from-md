@@ -34,8 +34,23 @@ const options = [
     callback: function(el) {
       Materialize.fadeInImage($(el)); 
     }
-  } 
+  },
+  {
+    selector: '.descarga',
+    offset: 300,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    }
+  },
+  {
+    selector: '.descarga-link',
+    offset: 500,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    }
+  },
 ]; Materialize.scrollFire(options);
+
 
 const extract = document.getElementById('extract');
 extract.onclick = function myLinks() {

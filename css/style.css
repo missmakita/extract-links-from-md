@@ -78,6 +78,10 @@ footer.page-footer {
 .love{
   margin-top: 100px;
 }
-.bwr, .imgScript, .imgHtml {
+.bwr, .imgScript, .imgHtml, .descarga, .descarga-link {
   opacity: 0;
 } 
+.descarga {
+  transform: translateX(0px);
+}
+   
