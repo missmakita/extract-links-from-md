@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
  <div class="navbar-fixed">
@@ -45,6 +46,16 @@
       </div>
     </div>
   </div>
+  <div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large blue">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating blue" href="#settings"><i class="material-icons">settings</i></a></li>
+      <li><a class="btn-floating blue" href="#code"><i class="material-icons">code</i></a></li>
+      <li><a class="btn-floating blue" href="#computer"><i class="material-icons">computer</i></a></li>
+    </ul>
+  </div>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -59,21 +70,21 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="img/thumb.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="img/Screenshot from 2018-02-01 13-32-05.png" alt="Unsplashed background img 1"></div>
   </div>
   
-  <div class="section">
-    <div class="container">
+  <div class="section" id="settings">
+    <div class="container" >
       <div class="row">
-       <div class="col s12">
-        <h2 class="center "><i class="blue-text large material-icons ">settings</i></h2>
+       <div class="col s12" >
+        <h2 class="center "><i class="blue-text large material-icons" >settings</i></h2>
         <h5 class="center">Instalación</h5>
       </div>
       </div>
     </div>
   </div> 
 
-    <div class="section white-text blue z-depth-4 ">
+    <div class="section white-text blue z-depth-4" >
       <div class="container">
         <div class="row">
             <div class="col s6">
@@ -93,18 +104,18 @@
       </div>
     </div> 
 
-    <div class="section">
-      <div class="container">
+    <div class="section" id="code">
+      <div class="container" >
         <div class="row">
-         <div class="col s12">
-          <h2 class="center "><i class=" blue-text large material-icons ">code</i></h2>
+         <div class="col s12" >
+          <h2 class="center "><i class=" blue-text large material-icons " >code</i></h2>
           <h5 class="center">Uso</h5>
         </div>
         </div>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" >
       <div class="container">
         <div class="row">
           <h6 class=""><strong>Node.js</strong></h6>
@@ -162,14 +173,14 @@
     <div class="parallax"><img src="img/thumb.jpg" alt="Unsplashed background img 1"></div>
   </div>
  
-  <div class="container">
+  <div class="container"  id="computer">
     <div class="section">
       <div class="row">
       <div class="icons-block">
-        <div class="col s12 ">
-            <h2 class="center  blue-text"><i class=" large material-icons ">computer</i></h2>
+        <div class="col s12" >
+            <h2 class="center  blue-text"><i class=" large material-icons" >computer</i></h2>
             <h4 class="center">Browser</h4>
-            <div class="col s12">
+            <div class="col s12" >
               <p class="light">La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, <strong>Linkin' Mark</strong> devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:</p>
               <p class="light">
                 1. Descarga <strong>Linkin' Mark</strong>.
@@ -178,7 +189,7 @@
                 2. Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto: ELIMINAR COMAS
               </p>
               <p class="light">
-                3. Crea un elemento <code>< input > </code>o <code>< textarea ></code> con <code>id="markdown"</code> en tu <code>html</code>. Agrega un botón con el<code>id="extract".</code> Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <code>&lt;pre&gt;&lt;/pre&gt;</code> y un elemento<code>&lt;code&gt;&lt;/code&gt;</code> con <code>id="result"</code> anidado en su interior. Puedes seguir este ejemplo:
+                3. Crea un elemento <code>< input > </code>o <code>< textarea ></code> con <code>id="markdown"</code> en tu <code>html</code>. Agrega un botón con el <code>id="extract".</code> Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <code>&lt;pre&gt;&lt;/pre&gt;</code> y un elemento<code>&lt;code&gt;&lt;/code&gt;</code> con <code>id="result"</code> anidado en su interior. Puedes seguir este ejemplo:
               </p>
               <img class="bwr responsive-img" src="img/html-browser.png">
             </div>
@@ -200,7 +211,7 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="img/thumb.jpg" alt="Unsplashed background img 2">
+      <img src="img/1_bcZz-qb_DNpvrNNwQBhQmQ.jpeg" alt="Unsplashed background img 2">
     </div>
   </div>
   <footer class="page-footer grey darken-4">
@@ -213,11 +224,9 @@
           </p>
           <p></p>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contacto</h5>
-          <ul>
-            <li><a class="white-text light" href=""></a><img src="img/" alt="">GitHub</li>
-          </ul>
+        <div class="col l3 s12 center">
+          <a class="white-text light" href="https://github.com/missmakita/md-links-extractor"><i class="fab fa-github fa-5x" href="https://github.com/missmakita/md-links-extractor"></i></a>
+        
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Licencia</h5>

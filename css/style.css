@@ -1,7 +1,4 @@
 
-nav{
-  
-}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -54,4 +51,8 @@ footer.page-footer {
 
 #logo {
   height: 55px;
+}
+.logoGit{
+  color: white;
+  width: 50px;
 }
