@@ -13,5 +13,4 @@ extract.onclick = function myLinks() {
   let markdown = document.getElementById('markdown').value;
   document.getElementById('markdown').value = '';
   document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
-  document.getElementById('result').value = '';
 };

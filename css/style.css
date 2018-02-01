@@ -18,6 +18,7 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
+
   .parallax-container .section {
     width: 100%;
   }
@@ -55,4 +56,19 @@ footer.page-footer {
 .logoGit{
   color: white;
   width: 50px;
+}
+.veve{
+  text-shadow: 0.1em 0.1em 0.05em #000;
+}
+#veveGray{
+  text-shadow: 0.05em 0.05em 0.01em #000;
+}
+#code,#computer,#settings{
+  margin-bottom: 20px;
+}
+#icon {
+  margin-top: 30px;
+}
+.love{
+  margin-top: 100px;
 }
