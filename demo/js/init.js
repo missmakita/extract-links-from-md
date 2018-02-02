@@ -22,6 +22,35 @@ const options = [
     } 
   },
   {
+    selector: '.uso',
+    offset: 500,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    } 
+  },
+  {
+    selector: '.instalacion',
+    offset: 500,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    } 
+  },
+  {
+    selector: '.browser',
+    offset: 500,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    } 
+  },
+  
+  {
+    selector: '.icon-brow',
+    offset: 500,
+    callback: function(el) {
+      Materialize.fadeInImage($(el)); 
+    } 
+  },
+  {
     selector: '.bwr',
     offset: 500,
     callback: function(el) {

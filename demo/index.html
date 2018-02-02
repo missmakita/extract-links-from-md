@@ -103,7 +103,7 @@
   </div> 
   <div id="code"></div>
     <div class="section" >
-      <div class="container" >
+      <div class="container uso" >
         <div class="row">
           <div class="col s12" >
             <h2 class="center"><i class="blue-text large material-icons">code</i></h2>
@@ -112,7 +112,7 @@
         </div>
       </div>
     </div>
-    <div class="section" >
+    <div class="section instalacion" >
       <div class="container">
         <div class="row">
           <h6 class=""><strong>Node.js</strong></h6>
@@ -158,32 +158,53 @@
   </div>
   <div id="computer"></div>
   <div class="container">
-    <div class="section">
+    <div class="section browser">
       <div class="row">
         <div class="icons-block">
-          <div class="col s12" >
+          <div class="col s12 icon-brow" >
             <h2 class="center  blue-text"><i class=" large material-icons" >computer</i></h2>
-            <h4 class="center">Browser</h4>
-            <div class="col s12" >
-              <p class="light">La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, <strong>Linkin' Mark</strong> devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:
-              </p>
-              <p class="light">
-                1. Descarga <strong>Linkin' Mark</strong>.
-              </p>
-              <p class="light">
-                2. Incorpora la carpeta <code>lib</code> conteniendo el archivo <code>md-link-extractor.js</code> en  la carpeta raíz de tu proyecto: ELIMINAR COMAS
-              </p>
-              <p class="light">
-                3. Crea un elemento <code>< input > </code>o <code>< textarea ></code> con <code>id="markdown"</code> en tu <code>html</code>. Agrega un botón con el <code>id="extract".</code> Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <code>&lt;pre&gt;&lt;/pre&gt;</code> y un elemento<code>&lt;code&gt;&lt;/code&gt;</code> con <code>id="result"</code> anidado en su interior. Puedes seguir este ejemplo:
-              </p>
-              <img class="bwr responsive-img" src="img/html-browser.png">
-            </div>
+            <h4 class="center ">Browser</h4>
+          </div>  
+            <div class="col s12 " >
+              <ol>
+                <li>Descarga <a href="https://registry.npmjs.org/linkinmark/-/linkinmark-1.0.0.tgz" rel="nofollow"><strong>Linkin' Mark</strong></a> o sigue las instrucciones más arriba para utilizar el enlace CDN en tu html.</li>
+                <li>Incorpora la carpeta <strong>lib</strong>, conteniendo el archivo <strong>md-link-extractor.js</strong>, en la carpeta raíz de tu proyecto.</li>
+                <li>Agrega el script al final del <strong>body</strong> de tu archivo <strong>html</strong>:
+                  <pre class="prettyprint lang-js linenums bwr"><code class="prettyprint">&lt;script src="./lib/md-link-extractor.js"&gt;&lt;/script&gt;
+                  &lt;script&gt;
+                  const extract = document.getElementById('extract');
+                  extract.onclick = function myLinks() {
+                  let markdown = document.getElementById('markdown').value;
+                  document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
+                  };
+                  &lt;/script&gt;
+                  </code></pre>
+                </li>
+              </ol>
+              <h5><strong>Ejemplo HTML</strong></h5>
+              <ol>
+                <li>Crea un elemento <strong>&lt;input&gt;</strong > o <strong >&lt;textarea&gt;</strong > con <strong >id="markdown"</strong > en tu html.</li>
+                <li>Agrega un botón con el <strong>id="extract"</strong>.</li>
+                <li>Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento <strong>&lt;pre&gt;&lt;/pre&gt;</strong> y un elemento <strong>&lt;code&gt;&lt;/code&gt;</strong> con <strong>id="result"</strong> anidado en su interior.
+                  <pre class="prettyprint lang-js linenums imgScript"><code>
+                  &lt;body&gt;
+                    &lt;h1&gt;Extractor de Links Markdown&lt;/h1&gt;
+                    &lt;h3&gt;Ingresa un texto en formato markdown para analizar:&lt;/h3&gt;
+                    &lt;textarea id="markdown" cols="100" rows="10"&gt;&lt;/textarea&gt;
+                    &lt;button id="extract"&gt;Extraer Links!&lt;/button&gt;
+                    &lt;h3&gt;Resultado:&lt;/h3&gt;
+                    &lt;pre&gt;
+                      &lt;code id="result"&gt;&lt;/code&gt;
+                    &lt;/pre&gt;
+                  &lt;/body&gt;
+                  </code></pre>
+                </li>
+              </ol>
             <p class="light">
-              4. Agrega el script al final del <code>body</code> de tu archivo<code> html</code>:
+              Si decides modificar los nombres de <code>id</code> sugeridas, recuerda verificar que coincidan con el <code>script</code>.
             </p>
-            <img class="responsive-img imgScript" src="img/html-script.png">
-            <p class="light">
-              5. Si decides modificar los nombres de <code>id</code> sugeridas, recuerda verificar que coincidan con el <code>script</code>.
+            <p>
+            <strong>El resultado se verá así:</strong>
             </p>
             <img class="responsive-img imgHtml center" src="img/ejemplohtml.png">
           </div>
