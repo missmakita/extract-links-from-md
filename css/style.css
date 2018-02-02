@@ -78,11 +78,12 @@ footer.page-footer {
 .love{
   margin-top: 100px;
 }
-.bwr, .imgScript, .imgHtml, .descarga, .descarga-link {
+.bwr, .imgScript, .imgHtml, .descarga, .descarga-link, .uso, .instalacion, .browser {
   opacity: 0;
 } 
-.descarga {
-  transform: translateX(0px);
+.browser ol li {
+  margin-bottom: 20px;
+
 }
    
 li.L0, li.L1, li.L2, li.L3,
