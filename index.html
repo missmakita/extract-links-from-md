@@ -43,7 +43,7 @@
   </div>
   <div class="section  grey lighten-4" id=resultBox>
     <div class="container">
-      <pre>
+      <pre class="prettyprint lang-js linenums">
         <code id="result"></code>
       </pre>
     </div>
@@ -96,11 +96,7 @@
         </div>
         <div class="col s5 offset-s1">
           <h6 class=""><strong>NPM</strong></h6>
-          <p>
-            <code>
-              $ npm install --save linkinmark 
-            </code>
-          </p>
+          <pre class="prettyprint lang-js linenums"><code>$ npm install --save linkinmark</code></pre>
         </div>
       </div>
     </div>
@@ -125,39 +121,26 @@
           </p>
           <p class="light">
             2. Modifica la siguiente línea del código base en `index.js`, incorporando la ruta del archivo markdown a procesar:</p>
-          <p>
-            <code>
-              const md = fs.readFileSync('<mi-archivo.md>').toString();
-            </code>
-          </p>
+          <pre class="prettyprint lang-js linenums"><code>const md = fs.readFileSync('<mi-archivo.md>').toString();</code></pre>
           <p class="light">
             3. En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta index.js :</p>
-          <p>
-            <code>
-              node index.js
-            </code>
-          </p>
+          <pre class="prettyprint lang-js linenums"><code>node index.js</code></pre>
           <p class="light">
             4. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.</p>
-          <p >
-            <pre class="white-text blue">
-            [
-                {
-                  "text":"labore",
-                  "href":"https://en.wiktionary.org/wiki/labore"
-                },
-                {
-                  "text":"dolore",
-                  "href":"https://en.wiktionary.org/wiki/dolore"
-                },
-                {
-                  "text":"foo",
-                  "href":"http://foo.com"
-                }
-              ]
-            </pre>
-          </p>
-            
+          <pre class="prettyprint lang-js linenums"><code>[</code>
+          <code> {</code>
+            "text":"labore",
+            "href":"https://en.wiktionary.org/wiki/labore"
+          },
+            {
+              "text":"dolore",
+              "href":"https://en.wiktionary.org/wiki/dolore"
+            },
+            {
+              "text":"foo",
+              "href":"http://foo.com"
+            }
+          ]</pre> 
         </div>
       </div>
     </div>
@@ -250,6 +233,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="lib/md-link-extractor.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
   <script src="js/init.js"></script>
 </body>
 </html>
