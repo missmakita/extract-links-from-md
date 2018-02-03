@@ -85,6 +85,6 @@ const extract = document.getElementById('extract');
 extract.onclick = function myLinks() {
   let markdown = document.getElementById('markdown').value;
   document.getElementById('markdown').value = '';
-  document.getElementById('markdown').style.height = "0px";
+  document.getElementById('markdown').style.height = '0px';
   document.getElementById('result').innerHTML = markdownLinkExtractor(markdown);
 };
