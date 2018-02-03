@@ -1,0 +1,92 @@
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+#logo {
+  margin-top: 5px;
+  width: 60px;
+}
+#logoE {
+  margin-top: 6%;
+  width: 40%;
+  margin-bottom: 2%;
+}
+.logoGit{
+  color: white;
+  width: 50px;
+}
+.veve{
+  text-shadow: 0.05em 0.05em 0.05em #000;
+}
+#veveGray{
+  text-shadow: 0.05em 0.05em 0.01em #000;
+}
+#code,#computer,#settings{
+  margin-bottom: 20px;
+}
+#icon {
+  margin-top: 30px;
+}
+.love{
+  margin-top: 100px;
+}
+.bwr, .imgScript, .imgHtml, .descarga, .descarga-link, .uso, .instalacion, .browser {
+  opacity: 0;
+} 
+.browser ol li {
+  margin-bottom: 20px;
+
+}
+   
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important;
+}
