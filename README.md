@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
 	<img src="./img/logo.gif">
 	</img>
 </p>
@@ -8,13 +8,15 @@
 <p align="center">
 	<a href="https://badge.fury.io/js/linkinmark"><img src="https://badge.fury.io/js/linkinmark.svg" alt="npm version"></a>
 	<a href="https://travis-ci.org/missmakita/md-links-extractor"><img src="https://travis-ci.org/missmakita/md-links-extractor.svg?branch=dev"></a>
-	<a href="https://www.jsdelivr.com/package/npm/linkinmark"><img src="https://data.jsdelivr.com/v1/package/npm/linkinmark/badge?style=rounded" alt=""></a>
-	<a href="https://www.npmjs.com/package/linkinmark"><img src="https://img.shields.io/npm/dt/express.svg" alt=""></a>
-	<a href="https://github.com/missmakita/md-links-extractor/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/missmakita/md-links-extractor.svg" alt=""></a>
+	<a href="https://www.npmjs.com/package/linkinmark"><img src="https://img.shields.io/npm/dt/linkinmark.svg" alt=""></a>
+	<a href="https://github.com/makafernandez/linkinmark/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/makafernandez/linkinmark.svg" alt=""></a>
 </p>
 
+# Linkin' Mark
 ## Descripción
 **Linkin' Mark** es un extractor de links desde formato Markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
+
+![linkinmark](https://user-images.githubusercontent.com/20823643/37864405-0a0a2eca-2f4d-11e8-8f5e-db9883dec484.png)
 
 ## Instalación
 ### NPM
@@ -37,7 +39,6 @@ Utiliza el CDN de Linkin' Mark para no añadir peso a tu proyecto. Agrega este `
 ### Node.js
 1. En la carpeta raíz de tu proyecto, crea un archivo index.js , conteniendo el siguiente código, indicando la ruta del archivo markdown (*.md) a analizar:
 	```
-    'use strict';
     const fs = require('fs');
     const linkinmark = require('linkinkmark');
     linkinmark.extract('./<mi-archivo.md>');
@@ -65,7 +66,7 @@ Utiliza el CDN de Linkin' Mark para no añadir peso a tu proyecto. Agrega este `
     ```
 ### Browser
 La versión para páginas web, requiere sólo de unas cuantas líneas de código. Al efectuar la búsqueda, **Linkin' Mark** devolverá los resultados en un objeto JSON. Para incorporar esta herramienta en tu página, sigue los siguientes pasos:
-1. Descarga [**Linkin' Mark**](https://registry.npmjs.org/linkinmark/-/linkinmark-1.0.0.tgz) o sigue las instrucciones más arriba para utilizar el enlace CDN en tu html.
+1. Descarga [**Linkin' Mark**](https://github.com/makafernandez/linkinmark/archive/master.zip) o sigue las instrucciones más arriba para utilizar el enlace CDN en tu html.
 2. Incorpora la carpeta `lib`, conteniendo el archivo `md-link-extractor.js`, en la carpeta raíz de tu proyecto.
 3. Agrega el script al final del `body` de tu archivo `html`:
 	```
@@ -102,7 +103,7 @@ El resultado se verá así:
 </p>
 
 ## Autoras
-[Makarena Fernández](https://github.com/missmakita), [Visaka Devi](https://github.com/visidevi) y [Viviana Marcelo](https://github.com/skyblue16).
+[Makarena Fernández](https://github.com/makafernandez), [Visaka Devi](https://github.com/visidevi) y [Viviana Marcelo](https://github.com/skyblue16).
 
 ## Licencia
 [MIT](LICENSE.txt)
