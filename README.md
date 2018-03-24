@@ -102,6 +102,9 @@ El resultado se verá así:
   <img src="./img/ejemplohtml.png">
 </p>
 
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
+
 ## Autoras
 [Makarena Fernández](https://github.com/makafernandez), [Visaka Devi](https://github.com/visidevi) y [Viviana Marcelo](https://github.com/skyblue16).
 
