@@ -13,10 +13,13 @@
 </p>
 
 # Linkin' Mark
-## Descripción
+
 **Linkin' Mark** es un extractor de links desde formato Markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
 
 ![linkinmark](https://user-images.githubusercontent.com/20823643/37864405-0a0a2eca-2f4d-11e8-8f5e-db9883dec484.png)
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
 
 ## Instalación
 ### NPM
@@ -101,9 +104,6 @@ El resultado se verá así:
 <p align="center">
   <img src="./img/ejemplohtml.png">
 </p>
-
-## Desarrollado para 
-[Laboratoria](http://laboratoria.la)
 
 ## Autoras
 [Makarena Fernández](https://github.com/makafernandez), [Visaka Devi](https://github.com/visidevi) y [Viviana Marcelo](https://github.com/skyblue16).
