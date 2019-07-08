@@ -25,12 +25,12 @@ Desde la consola, posiciónate en la carpeta raíz de tu proyecto e instala el p
 Utiliza el CDN de Linkin' Mark para no añadir peso a tu proyecto. Agrega este `<script>` al final del `<body>` en tu `<hmtl>`:
 
     <script src="https://cdn.jsdelivr.net/npm/linkinmark@1/lib/md-link-extractor.min.js"></script>
-    
+
 ### Descarga directa
 1. Descarga [**Linkin' Mark**](https://registry.npmjs.org/linkinmark/-/linkinmark-1.0.0.tgz) y extrae los archivos en tu computador.
 2. Incorpora la carpeta `lib`, conteniendo el archivo `md-link-extractor.js`, en  la carpeta raíz de tu proyecto.
 3. Asocia tu html con md-link-extractor.js, escribiendo el siguiente script al final de `<body>`:
-	
+
 	`<script src="./lib/md-link-extractor.js"></script>`
 
 ## Uso
@@ -46,7 +46,7 @@ Utiliza el CDN de Linkin' Mark para no añadir peso a tu proyecto. Agrega este `
 	$ node index.js
 	```
 3. El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado. Éste quedará guardado en un archivo en la carpeta `./data/mylinks.json`:
-	
+
 	```
     [
       {
@@ -79,9 +79,9 @@ La versión para páginas web, requiere sólo de unas cuantas líneas de código
     </script>
 #### Ejemplo HTML
 Puedes seguir este ejemplo:
-1. Crea un elemento `<input>` o `<textarea>` con `id="markdown"` en tu html. 
+1. Crea un elemento `<input>` o `<textarea>` con `id="markdown"` en tu html.
 2. Agrega un botón con el `id="extract"`.
-3. Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento `<pre></pre>` y un elemento `<code></code>` con `id="result"` anidado en su interior. 
+3. Por último, para poder visualizar el resultado de la búsqueda, incorpora un elemento `<pre></pre>` y un elemento `<code></code>` con `id="result"` anidado en su interior.
 	```
 	<body>
 	  <h1>Extractor de Links Markdown</h1>
