@@ -10,23 +10,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/missmakita/md-links-extractor.git"
+    "url": "git+https://github.com/makafernandez/md-links-extractor.git"
   },
   "keywords": [
     "markdown",
     "javascript",
-    "nodejs"
+    "nodejs",
+    "json",
+    "plugin"
   ],
   "author": "MissMakita, SkyBlue16, Visidevi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/missmakita/md-links-extractor/issues"
+    "url": "https://github.com/makafernandez/md-links-extractor/issues"
   },
-  "homepage": "https://missmakita.github.com.io/md-links-extractor",
+  "homepage": "https://makafernandez.github.io/md-links-extractor/",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^4.17.0",
-    "mocha": "^5.0.0"
+    "chai": "^4.2.0",
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0"
   },
   "dependencies": {}
 }
